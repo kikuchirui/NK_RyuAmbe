@@ -1999,7 +1999,11 @@ body{
     }
   }
   .modal-cont{
-    overflow: scroll;
+    overflow-y: scroll;
+
+    @include mq{
+      overflow: visible;
+    }
   }
   .modal-img-wrapper{
     flex-direction: column;
